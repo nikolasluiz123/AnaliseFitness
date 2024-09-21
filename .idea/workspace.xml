@@ -4,29 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15a5d495-c8a3-4522-a1bb-3ecbf5b5e165" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/AnaliseFitness.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analises/analise_dados.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analises/analise_dados_exercicio_musculacao_desenvolvimento_ombros.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analises/analise_dados_exercicio_musculacao_levantamento_terra.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analises/visualizacao_todos_dados.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/straction/normalize_test_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/straction/normalize_training_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testes/classificacao_treino_eficaz/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testes/deteccao_anomalias/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testes/exercicios_mais_eficazes_tipo_treino/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testes/identificar_variaveis_influenciam_desempenho/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testes/otimizacao_sequencia_exercicios/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testes/previsao_peso_repeticoes_futuras/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testes/previsao_tendencias_desempenho/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testes/recomendacao_treino_personalizado/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/analise_utils.py" afterDir="false" />
+    <list default="true" id="15a5d495-c8a3-4522-a1bb-3ecbf5b5e165" name="Changes" comment="feat: analises iniciais e códigos de estudo que precisam ser aprofundados">
+      <change afterPath="$PROJECT_DIR$/hiper_params_search/randomized_search_cv.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testes/previsao_peso_repeticoes_futuras/random_forest_regressor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +24,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;nikolasluiz123&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/nikolasluiz123/AnaliseFitness.git&quot;,
+    &quot;accountId&quot;: &quot;8f357b9b-1e31-4377-a311-fc17514eada0&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -65,6 +58,7 @@
     "Python.main (5).executor": "Run",
     "Python.main.executor": "Run",
     "Python.normalize_training_data.executor": "Run",
+    "Python.random_forest_regressor.executor": "Run",
     "Python.visualizacao_todos_dados.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -84,7 +78,7 @@
       <recent name="C:\Users\nikol\git\IA\AnaliseFitness\data\workout_evolution" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main (3)">
+  <component name="RunManager" selected="Python.random_forest_regressor">
     <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AnaliseFitness" />
       <option name="ENV_FILES" value="" />
@@ -173,7 +167,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main (5)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="random_forest_regressor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AnaliseFitness" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -182,11 +176,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testes/identificar_variaveis_influenciam_desempenho" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testes/previsao_peso_repeticoes_futuras" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testes/identificar_variaveis_influenciam_desempenho/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testes/previsao_peso_repeticoes_futuras/random_forest_regressor.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -197,11 +191,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.random_forest_regressor" />
         <item itemvalue="Python.main (3)" />
         <item itemvalue="Python.main (4)" />
         <item itemvalue="Python.main (2)" />
         <item itemvalue="Python.main (1)" />
-        <item itemvalue="Python.main (5)" />
       </list>
     </recent_temporary>
   </component>
@@ -221,6 +215,19 @@
       <option name="presentableId" value="Default" />
       <updated>1726710288457</updated>
     </task>
+    <task id="LOCAL-00001" summary="feat: analises iniciais e códigos de estudo que precisam ser aprofundados">
+      <option name="closed" value="true" />
+      <created>1726936745511</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1726936745511</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: analises iniciais e códigos de estudo que precisam ser aprofundados" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: analises iniciais e códigos de estudo que precisam ser aprofundados" />
   </component>
 </project>
