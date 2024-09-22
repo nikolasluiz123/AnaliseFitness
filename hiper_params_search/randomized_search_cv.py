@@ -19,7 +19,8 @@ class CrossValScoreResult:
                  median: float,
                  variance: float,
                  standard_error: float,
-                 min_max_score: tuple[float, float]):
+                 min_max_score: tuple[float, float],
+                 estimator):
         """
             :param mean: Média dos scores individuais, fornece uma estimativa central do desempenho do modelo.
             :param standard_deviation: Desvio Padrão, mede a variação dos scores em diferentes folds. Um Desvio Padrão
@@ -33,6 +34,7 @@ class CrossValScoreResult:
             a média estimada está da média verdadeira.
             :param min_max_score: O score máximo e mínimo ajudam a identificar a melhor e a pior performance entre os
             folds.
+            :param estimator Estimador com os melhores parâmetros e que foi testado.
         """
 
         self.mean = mean
@@ -41,6 +43,7 @@ class CrossValScoreResult:
         self.variance = variance
         self.standard_error = standard_error
         self.min_max_score = min_max_score
+        self.estimator = estimator
 
     def show_cross_val_metrics(self):
         """
@@ -56,6 +59,7 @@ class CrossValScoreResult:
         print(f"Erro padrão da média      : {self.standard_error:.4f}")
         print(f"Score mínimo              : {self.min_max_score[0]:.4f}")
         print(f"Score máximo              : {self.min_max_score[1]:.4f}")
+        print(f"Melhor Estimator          : {self.estimator} ")
         print("-" * 50)
         print("Análise:")
         print(f"- Um desvio padrão baixo ({self.standard_deviation:.4f}) indica consistência no desempenho.")
@@ -141,7 +145,8 @@ class HipperParamsSearch:
             median=np.median(scores),
             variance=np.var(scores),
             standard_error=np.std(scores) / np.sqrt(len(scores)),
-            min_max_score=(np.min(scores), np.max(scores))
+            min_max_score=(np.min(scores), np.max(scores)),
+            estimator=searcher.best_estimator_
         )
 
     def show_processing_time(self):

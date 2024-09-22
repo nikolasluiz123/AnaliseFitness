@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15a5d495-c8a3-4522-a1bb-3ecbf5b5e165" name="Changes" comment="feat: analise dos dados que estão sendo usados para previsão">
+    <list default="true" id="15a5d495-c8a3-4522-a1bb-3ecbf5b5e165" name="Changes" comment="fix: tentativa de ajuste dos parâmetros">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testes/previsao_peso_repeticoes_futuras/random_forest_regressor.py" beforeDir="false" afterPath="$PROJECT_DIR$/testes/previsao_peso_repeticoes_futuras/random_forest_regressor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testes/previsao_peso_repeticoes_futuras/svr.py" beforeDir="false" afterPath="$PROJECT_DIR$/testes/previsao_peso_repeticoes_futuras/svr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hiper_params_search/randomized_search_cv.py" beforeDir="false" afterPath="$PROJECT_DIR$/hiper_params_search/randomized_search_cv.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +82,7 @@
       <recent name="C:\Users\nikol\git\IA\AnaliseFitness\data\workout_evolution" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.svr">
+  <component name="RunManager" selected="Python.decision_tree_regressor (1)">
     <configuration name="analise_dados_treino" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AnaliseFitness" />
       <option name="ENV_FILES" value="" />
@@ -196,9 +195,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.decision_tree_regressor (1)" />
         <item itemvalue="Python.svr" />
         <item itemvalue="Python.random_forest_regressor" />
-        <item itemvalue="Python.decision_tree_regressor (1)" />
         <item itemvalue="Python.analise_dados_treino" />
         <item itemvalue="Python.decision_tree_regressor" />
       </list>
@@ -268,7 +267,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727031140891</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix: tentativa de ajuste dos parâmetros">
+      <option name="closed" value="true" />
+      <created>1727042995137</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1727042995137</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -278,6 +285,7 @@
     <MESSAGE value="fix: redução dos parâmetros do svr" />
     <MESSAGE value="chore: documentação das classes de busca de parâmetros" />
     <MESSAGE value="feat: analise dos dados que estão sendo usados para previsão" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: analise dos dados que estão sendo usados para previsão" />
+    <MESSAGE value="fix: tentativa de ajuste dos parâmetros" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: tentativa de ajuste dos parâmetros" />
   </component>
 </project>
