@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15a5d495-c8a3-4522-a1bb-3ecbf5b5e165" name="Changes" comment="chore: documentação das classes de busca de parâmetros">
-      <change afterPath="$PROJECT_DIR$/analises/analise_dados_treino.py" afterDir="false" />
+    <list default="true" id="15a5d495-c8a3-4522-a1bb-3ecbf5b5e165" name="Changes" comment="feat: analise dos dados que estão sendo usados para previsão">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testes/previsao_peso_repeticoes_futuras/decision_tree_regressor.py" beforeDir="false" afterPath="$PROJECT_DIR$/testes/previsao_peso_repeticoes_futuras/decision_tree_regressor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testes/previsao_peso_repeticoes_futuras/random_forest_regressor.py" beforeDir="false" afterPath="$PROJECT_DIR$/testes/previsao_peso_repeticoes_futuras/random_forest_regressor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testes/previsao_peso_repeticoes_futuras/svr.py" beforeDir="false" afterPath="$PROJECT_DIR$/testes/previsao_peso_repeticoes_futuras/svr.py" afterDir="false" />
     </list>
@@ -49,29 +47,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.analise_dados (1).executor": "Run",
-    "Python.analise_dados.executor": "Run",
-    "Python.analise_dados_treino.executor": "Run",
-    "Python.decision_tree_classifier.executor": "Run",
-    "Python.decision_tree_regressor (1).executor": "Run",
-    "Python.main (1).executor": "Run",
-    "Python.main (2).executor": "Run",
-    "Python.main (3).executor": "Run",
-    "Python.main (4).executor": "Run",
-    "Python.main (5).executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.normalize_training_data.executor": "Run",
-    "Python.random_forest_regressor.executor": "Run",
-    "Python.svr.executor": "Run",
-    "Python.visualizacao_todos_dados.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/nikol/git/alura/MachineLearning/RegressaoLinear"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.analise_dados (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.analise_dados.executor&quot;: &quot;Run&quot;,
+    &quot;Python.analise_dados_treino.executor&quot;: &quot;Run&quot;,
+    &quot;Python.decision_tree_classifier.executor&quot;: &quot;Run&quot;,
+    &quot;Python.decision_tree_regressor (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.main (2).executor&quot;: &quot;Run&quot;,
+    &quot;Python.main (3).executor&quot;: &quot;Run&quot;,
+    &quot;Python.main (4).executor&quot;: &quot;Run&quot;,
+    &quot;Python.main (5).executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.normalize_training_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.random_forest_regressor.executor&quot;: &quot;Run&quot;,
+    &quot;Python.svr.executor&quot;: &quot;Run&quot;,
+    &quot;Python.visualizacao_todos_dados.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/nikol/git/alura/MachineLearning/RegressaoLinear&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\nikol\git\IA\AnaliseFitness\testes\previsao_peso_repeticoes_futuras" />
@@ -85,7 +83,7 @@
       <recent name="C:\Users\nikol\git\IA\AnaliseFitness\data\workout_evolution" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.random_forest_regressor">
+  <component name="RunManager" selected="Python.svr">
     <configuration name="analise_dados_treino" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AnaliseFitness" />
       <option name="ENV_FILES" value="" />
@@ -198,8 +196,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.random_forest_regressor" />
         <item itemvalue="Python.svr" />
+        <item itemvalue="Python.random_forest_regressor" />
         <item itemvalue="Python.decision_tree_regressor (1)" />
         <item itemvalue="Python.analise_dados_treino" />
         <item itemvalue="Python.decision_tree_regressor" />
@@ -262,7 +260,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726973278579</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: analise dos dados que estão sendo usados para previsão">
+      <option name="closed" value="true" />
+      <created>1727031140891</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1727031140891</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -271,6 +277,7 @@
     <MESSAGE value="feat: implementação com decision tree regressor e svr" />
     <MESSAGE value="fix: redução dos parâmetros do svr" />
     <MESSAGE value="chore: documentação das classes de busca de parâmetros" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: documentação das classes de busca de parâmetros" />
+    <MESSAGE value="feat: analise dos dados que estão sendo usados para previsão" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: analise dos dados que estão sendo usados para previsão" />
   </component>
 </project>

@@ -21,20 +21,20 @@ data_y = dataframe['peso']
 
 search_params = {
     'kernel': ['linear', 'poly', 'rbf', 'sigmoid'],
-    # 'C': np.logspace(-3, 3, 7),
+    'C': np.logspace(-3, 3, 7),
     'gamma': ['scale', 'auto'],
-    # 'degree': randint(1, 10),
-    # 'epsilon': np.logspace(-3, 1, 5),
-    # 'coef0': np.linspace(0, 1, 5),
+    'degree': randint(1, 10),
+    'epsilon': np.logspace(-3, 1, 5),
+    'coef0': np.linspace(0, 1, 5),
     'shrinking': [True, False],
-    # 'tol': np.logspace(-5, -1, 5)
+    'tol': np.logspace(-5, -1, 5)
 }
 
 hiper_parameter_searcher = SVRSearch(data_x=data_x,
                                      data_y=data_y,
                                      params=search_params,
                                      cv=KFold(10),
-                                     n_jobs=-1)
+                                     n_jobs=6)
 
 randomized_search_cv = hiper_parameter_searcher.search_hipper_parameters(number_iterations=5)
 
