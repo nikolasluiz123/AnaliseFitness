@@ -33,9 +33,10 @@ search_params = {
 hiper_parameter_searcher = DecisionTreeRegressorSearch(data_x=data_x,
                                                        data_y=data_y,
                                                        params=search_params,
-                                                       cv=KFold(10))
+                                                       cv=KFold(10),
+                                                       n_jobs=-1)
 
-randomized_search_cv = hiper_parameter_searcher.search_hipper_parameters(number_iterations=50)
+randomized_search_cv = hiper_parameter_searcher.search_hipper_parameters(number_iterations=10)
 
 cross_val_score_result = hiper_parameter_searcher.calculate_cross_val_score(searcher=randomized_search_cv)
 cross_val_score_result.show_cross_val_metrics()

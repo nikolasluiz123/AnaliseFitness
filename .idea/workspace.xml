@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15a5d495-c8a3-4522-a1bb-3ecbf5b5e165" name="Changes" comment="feat: implementação com decision tree regressor e svr">
+    <list default="true" id="15a5d495-c8a3-4522-a1bb-3ecbf5b5e165" name="Changes" comment="chore: documentação das classes de busca de parâmetros">
+      <change afterPath="$PROJECT_DIR$/analises/analise_dados_treino.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testes/previsao_peso_repeticoes_futuras/decision_tree_regressor.py" beforeDir="false" afterPath="$PROJECT_DIR$/testes/previsao_peso_repeticoes_futuras/decision_tree_regressor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testes/previsao_peso_repeticoes_futuras/random_forest_regressor.py" beforeDir="false" afterPath="$PROJECT_DIR$/testes/previsao_peso_repeticoes_futuras/random_forest_regressor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testes/previsao_peso_repeticoes_futuras/svr.py" beforeDir="false" afterPath="$PROJECT_DIR$/testes/previsao_peso_repeticoes_futuras/svr.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +53,7 @@
   "keyToString": {
     "Python.analise_dados (1).executor": "Run",
     "Python.analise_dados.executor": "Run",
+    "Python.analise_dados_treino.executor": "Run",
     "Python.decision_tree_classifier.executor": "Run",
     "Python.decision_tree_regressor (1).executor": "Run",
     "Python.main (1).executor": "Run",
@@ -64,7 +69,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/nikol/git/IA/AnaliseFitness/testes/previsao_peso_repeticoes_futuras"
+    "last_opened_file_path": "C:/Users/nikol/git/alura/MachineLearning/RegressaoLinear"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -80,7 +85,29 @@
       <recent name="C:\Users\nikol\git\IA\AnaliseFitness\data\workout_evolution" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.svr">
+  <component name="RunManager" selected="Python.random_forest_regressor">
+    <configuration name="analise_dados_treino" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="AnaliseFitness" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/analises" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/analises/analise_dados_treino.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="decision_tree_regressor (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AnaliseFitness" />
       <option name="ENV_FILES" value="" />
@@ -117,28 +144,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="C:\Users\nikol\git\IA\AnaliseFitness\testes\previsao_peso_repeticoes_futuras\decision_tree_regressor.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="AnaliseFitness" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testes/previsao_peso_repeticoes_futuras" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testes/previsao_peso_repeticoes_futuras/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -193,18 +198,18 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.random_forest_regressor" />
         <item itemvalue="Python.svr" />
         <item itemvalue="Python.decision_tree_regressor (1)" />
+        <item itemvalue="Python.analise_dados_treino" />
         <item itemvalue="Python.decision_tree_regressor" />
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python.random_forest_regressor" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-5b207ade9991-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.17890.14" />
+        <option value="bundled-python-sdk-8336bb23522e-31b6be0877a2-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.19072.16" />
       </set>
     </attachedChunks>
   </component>
@@ -241,13 +246,31 @@
       <option name="project" value="LOCAL" />
       <updated>1726968455960</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix: redução dos parâmetros do svr">
+      <option name="closed" value="true" />
+      <created>1726971531805</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1726971531805</updated>
+    </task>
+    <task id="LOCAL-00005" summary="chore: documentação das classes de busca de parâmetros">
+      <option name="closed" value="true" />
+      <created>1726973278579</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1726973278579</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: analises iniciais e códigos de estudo que precisam ser aprofundados" />
     <MESSAGE value="feat: busca de hiper parâmetros e validação cruzada do melhor modelo encontrado" />
     <MESSAGE value="feat: implementação com decision tree regressor e svr" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: implementação com decision tree regressor e svr" />
+    <MESSAGE value="fix: redução dos parâmetros do svr" />
+    <MESSAGE value="chore: documentação das classes de busca de parâmetros" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: documentação das classes de busca de parâmetros" />
   </component>
 </project>

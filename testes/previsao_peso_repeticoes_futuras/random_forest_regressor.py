@@ -20,10 +20,10 @@ data_x = dataframe.drop(['peso'], axis=1)  # Prevendo 'peso'
 data_y = dataframe['peso']
 
 search_params = {
-    'n_estimators': randint(100, 500),
-    # 'max_depth': randint(10, 40),
-    # 'min_samples_split': randint(2, 10),
-    # 'min_samples_leaf': randint(1, 4),
+    'n_estimators': [100],
+    'max_depth': [5],
+    'min_samples_split': [2, 5],
+    'min_samples_leaf': [1, 2, 4],
     'max_features': ['sqrt', 'log2'],
     'bootstrap': [True, False],
     'criterion': ['squared_error', 'absolute_error']
@@ -32,9 +32,10 @@ search_params = {
 hiper_parameter_searcher = RandomForestRegressorSearch(data_x=data_x,
                                                        data_y=data_y,
                                                        params=search_params,
-                                                       cv=KFold(5))
+                                                       cv=KFold(10),
+                                                       n_jobs=-1)
 
-randomized_search_cv = hiper_parameter_searcher.search_hipper_parameters(number_iterations=10)
+randomized_search_cv = hiper_parameter_searcher.search_hipper_parameters(number_iterations=5)
 
 cross_val_score_result = hiper_parameter_searcher.calculate_cross_val_score(searcher=randomized_search_cv)
 cross_val_score_result.show_cross_val_metrics()
