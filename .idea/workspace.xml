@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15a5d495-c8a3-4522-a1bb-3ecbf5b5e165" name="Changes" comment="feat: analises iniciais e códigos de estudo que precisam ser aprofundados">
-      <change afterPath="$PROJECT_DIR$/hiper_params_search/randomized_search_cv.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testes/previsao_peso_repeticoes_futuras/random_forest_regressor.py" afterDir="false" />
+    <list default="true" id="15a5d495-c8a3-4522-a1bb-3ecbf5b5e165" name="Changes" comment="feat: busca de hiper parâmetros e validação cruzada do melhor modelo encontrado">
+      <change afterPath="$PROJECT_DIR$/testes/previsao_peso_repeticoes_futuras/decision_tree_regressor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testes/previsao_peso_repeticoes_futuras/svr.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hiper_params_search/randomized_search_cv.py" beforeDir="false" afterPath="$PROJECT_DIR$/hiper_params_search/randomized_search_cv.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +52,8 @@
   "keyToString": {
     "Python.analise_dados (1).executor": "Run",
     "Python.analise_dados.executor": "Run",
+    "Python.decision_tree_classifier.executor": "Run",
+    "Python.decision_tree_regressor (1).executor": "Run",
     "Python.main (1).executor": "Run",
     "Python.main (2).executor": "Run",
     "Python.main (3).executor": "Run",
@@ -59,15 +62,17 @@
     "Python.main.executor": "Run",
     "Python.normalize_training_data.executor": "Run",
     "Python.random_forest_regressor.executor": "Run",
+    "Python.svr.executor": "Run",
     "Python.visualizacao_todos_dados.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/nikol/git/IA/AnaliseFitness/straction"
+    "last_opened_file_path": "C:/Users/nikol/git/IA/AnaliseFitness/testes/previsao_peso_repeticoes_futuras"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nikol\git\IA\AnaliseFitness\testes\previsao_peso_repeticoes_futuras" />
       <recent name="C:\Users\nikol\git\IA\AnaliseFitness\straction" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -78,8 +83,8 @@
       <recent name="C:\Users\nikol\git\IA\AnaliseFitness\data\workout_evolution" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.random_forest_regressor">
-    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.svr">
+    <configuration name="decision_tree_regressor (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AnaliseFitness" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -88,11 +93,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testes/deteccao_anomalias" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testes/previsao_peso_repeticoes_futuras" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testes/deteccao_anomalias/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testes/previsao_peso_repeticoes_futuras/decision_tree_regressor.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -101,7 +106,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="decision_tree_regressor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AnaliseFitness" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -110,11 +115,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testes/otimizacao_sequencia_exercicios" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testes/previsao_peso_repeticoes_futuras" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testes/otimizacao_sequencia_exercicios/main.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\nikol\git\IA\AnaliseFitness\testes\previsao_peso_repeticoes_futuras\decision_tree_regressor.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -123,7 +128,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main (3)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AnaliseFitness" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -132,33 +137,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testes/previsao_tendencias_desempenho" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testes/previsao_peso_repeticoes_futuras" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testes/previsao_tendencias_desempenho/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="main (4)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="AnaliseFitness" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testes/recomendacao_treino_personalizado" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testes/recomendacao_treino_personalizado/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testes/previsao_peso_repeticoes_futuras/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -189,13 +172,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="svr" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="AnaliseFitness" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testes/previsao_peso_repeticoes_futuras" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testes/previsao_peso_repeticoes_futuras/svr.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.svr" />
+        <item itemvalue="Python.decision_tree_regressor (1)" />
+        <item itemvalue="Python.decision_tree_regressor" />
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.random_forest_regressor" />
-        <item itemvalue="Python.main (3)" />
-        <item itemvalue="Python.main (4)" />
-        <item itemvalue="Python.main (2)" />
-        <item itemvalue="Python.main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -223,11 +228,20 @@
       <option name="project" value="LOCAL" />
       <updated>1726936745511</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: busca de hiper parâmetros e validação cruzada do melhor modelo encontrado">
+      <option name="closed" value="true" />
+      <created>1726961443227</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1726961443227</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: analises iniciais e códigos de estudo que precisam ser aprofundados" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: analises iniciais e códigos de estudo que precisam ser aprofundados" />
+    <MESSAGE value="feat: busca de hiper parâmetros e validação cruzada do melhor modelo encontrado" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: busca de hiper parâmetros e validação cruzada do melhor modelo encontrado" />
   </component>
 </project>

@@ -2,7 +2,9 @@ import time
 
 import numpy as np
 from sklearn.ensemble import RandomForestRegressor
-from sklearn.model_selection import RandomizedSearchCV, KFold, cross_val_score
+from sklearn.model_selection import RandomizedSearchCV, cross_val_score
+from sklearn.svm import SVR
+from sklearn.tree import DecisionTreeRegressor
 
 
 class CrossValScoreResult:
@@ -63,13 +65,9 @@ class CrossValScoreResult:
               " indica a variabilidade entre as partições.")
 
 
-class RandomForestRegressorSearch:
-    """
-        Classe para realizar a pesquisa de hiper parametros do estimador RandomForestRegressor utilizando RandomizedSearchCV
-        para evitar percorrer todas as opções de valores.
-    """
+class HipperParamsSearch:
 
-    def __init__(self, data_x, data_y, params: dict[str, list], cv, seed: int = 1):
+    def __init__(self, data_x, data_y, params: dict[str, list], cv, seed: int = 1, n_jobs: int = -1):
         """
             :param data_x: Features obtidas dos dados analisados
             :param data_y: Classes ou o resultado que deseja obter
@@ -81,6 +79,7 @@ class RandomForestRegressorSearch:
         self.cv = cv
         self.data_x = data_x
         self.data_y = data_y
+        self.n_jobs = n_jobs
 
         self.start_search_parameter_time = 0
         self.end_search_parameter_time = 0
@@ -90,21 +89,22 @@ class RandomForestRegressorSearch:
 
         np.random.seed(seed)
 
-    def search_hipper_parameters(self, number_iterations: int) -> RandomizedSearchCV:
+    def _search_hipper_parameters(self, number_iterations: int, estimator) -> RandomizedSearchCV:
         """
             Função para realizar a pesquisa dos melhores parâmetros para o estimador RandomForestRegressor.
 
             :param number_iterations: Quantidade de vezes que o RandomizedSearchCV vai escolher os valores dos parâmetros
             fornecidos no parâmetro params
+            :param estimator Instância do estimador
 
             :return: Retorna o objeto RandomizedSearchCV que poderá ser utilizado na função calculate_cross_val_score
             e obter as métricas.
         """
 
-        search = RandomizedSearchCV(estimator=RandomForestRegressor(),
+        search = RandomizedSearchCV(estimator=estimator,
                                     param_distributions=self.params,
                                     cv=self.cv,
-                                    n_jobs=-1,
+                                    n_jobs=self.n_jobs,
                                     verbose=2,
                                     n_iter=number_iterations)
 
@@ -130,7 +130,7 @@ class RandomForestRegressorSearch:
                                  X=self.data_x,
                                  y=self.data_y,
                                  cv=self.cv,
-                                 n_jobs=-1,
+                                 n_jobs=self.n_jobs,
                                  verbose=2)
 
         self.end_best_model_cross_validation = time.time()
@@ -164,3 +164,32 @@ class RandomForestRegressorSearch:
         minutes, seconds = divmod(remainder, 60)
 
         return f"{int(hours):02}:{int(minutes):02}:{int(seconds):02}"
+
+
+class RandomForestRegressorSearch(HipperParamsSearch):
+    """
+        Classe para realizar a pesquisa de hiper parametros do estimador RandomForestRegressor utilizando RandomizedSearchCV
+        para evitar percorrer todas as opções de valores.
+    """
+
+    def __init__(self, data_x, data_y, params: dict[str, list], cv, seed: int = 1, n_jobs: int = -1):
+        super().__init__(data_x, data_y, params, cv, seed, n_jobs)
+
+    def search_hipper_parameters(self, number_iterations: int) -> RandomizedSearchCV:
+        return super()._search_hipper_parameters(number_iterations=number_iterations, estimator=RandomForestRegressor())
+
+
+class DecisionTreeRegressorSearch(HipperParamsSearch):
+    def __init__(self, data_x, data_y, params: dict[str, list], cv, seed: int = 1, n_jobs: int = -1):
+        super().__init__(data_x, data_y, params, cv, seed, n_jobs)
+
+    def search_hipper_parameters(self, number_iterations: int) -> RandomizedSearchCV:
+        return super()._search_hipper_parameters(number_iterations=number_iterations, estimator=DecisionTreeRegressor())
+
+
+class SVRSearch(HipperParamsSearch):
+    def __init__(self, data_x, data_y, params: dict[str, list], cv, seed: int = 1, n_jobs: int = -1):
+        super().__init__(data_x, data_y, params, cv, seed, n_jobs)
+
+    def search_hipper_parameters(self, number_iterations: int) -> RandomizedSearchCV:
+        return super()._search_hipper_parameters(number_iterations=number_iterations, estimator=SVR())
