@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15a5d495-c8a3-4522-a1bb-3ecbf5b5e165" name="Changes" comment="feat: busca de hiper parâmetros e validação cruzada do melhor modelo encontrado">
-      <change afterPath="$PROJECT_DIR$/testes/previsao_peso_repeticoes_futuras/decision_tree_regressor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testes/previsao_peso_repeticoes_futuras/svr.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hiper_params_search/randomized_search_cv.py" beforeDir="false" afterPath="$PROJECT_DIR$/hiper_params_search/randomized_search_cv.py" afterDir="false" />
+    <list default="true" id="15a5d495-c8a3-4522-a1bb-3ecbf5b5e165" name="Changes" comment="feat: implementação com decision tree regressor e svr">
+      <change beforePath="$PROJECT_DIR$/testes/previsao_peso_repeticoes_futuras/svr.py" beforeDir="false" afterPath="$PROJECT_DIR$/testes/previsao_peso_repeticoes_futuras/svr.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,12 +233,21 @@
       <option name="project" value="LOCAL" />
       <updated>1726961443227</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: implementação com decision tree regressor e svr">
+      <option name="closed" value="true" />
+      <created>1726968455960</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1726968455960</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: analises iniciais e códigos de estudo que precisam ser aprofundados" />
     <MESSAGE value="feat: busca de hiper parâmetros e validação cruzada do melhor modelo encontrado" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: busca de hiper parâmetros e validação cruzada do melhor modelo encontrado" />
+    <MESSAGE value="feat: implementação com decision tree regressor e svr" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: implementação com decision tree regressor e svr" />
   </component>
 </project>

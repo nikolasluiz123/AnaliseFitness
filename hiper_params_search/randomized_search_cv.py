@@ -180,16 +180,20 @@ class RandomForestRegressorSearch(HipperParamsSearch):
 
 
 class DecisionTreeRegressorSearch(HipperParamsSearch):
-    def __init__(self, data_x, data_y, params: dict[str, list], cv, seed: int = 1, n_jobs: int = -1):
-        super().__init__(data_x, data_y, params, cv, seed, n_jobs)
+    """
+        Classe para realizar a pesquisa de hiper parametros do estimador DecisionTreeRegressor utilizando RandomizedSearchCV
+        para evitar percorrer todas as opções de valores.
+    """
 
     def search_hipper_parameters(self, number_iterations: int) -> RandomizedSearchCV:
         return super()._search_hipper_parameters(number_iterations=number_iterations, estimator=DecisionTreeRegressor())
 
 
 class SVRSearch(HipperParamsSearch):
-    def __init__(self, data_x, data_y, params: dict[str, list], cv, seed: int = 1, n_jobs: int = -1):
-        super().__init__(data_x, data_y, params, cv, seed, n_jobs)
+    """
+        Classe para realizar a pesquisa de hiper parametros do estimador SVR utilizando RandomizedSearchCV
+        para evitar percorrer todas as opções de valores.
+    """
 
     def search_hipper_parameters(self, number_iterations: int) -> RandomizedSearchCV:
         return super()._search_hipper_parameters(number_iterations=number_iterations, estimator=SVR())
